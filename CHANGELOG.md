@@ -1,87 +1,94 @@
-# Changelog
+### Changelog
+
+## [Unreleased]
+
+### Added
+
+- **useDatePickerNavigation Hook**:
+  - Introduced `useCallback` to memoize the `handleKeyDown` function, improving performance by preventing unnecessary re-renders.
+  - Corrected the type for keyboard events to `React.KeyboardEvent` to avoid type errors.
+  - Enhanced readability and maintainability of the code.
+
+### Fixed
+
+- **Type Errors**: Resolved type errors related to keyboard events by using the correct React-specific event type.
+
+### Improved
+
+- **Performance**: Optimized the `useDatePickerNavigation` hook for better performance and type safety.
 
 ## [3.0.4](https://github.com/aliakbarazizi/headless-datepicker/compare/v3.0.3...v3.0.4) (2024-08-04)
 
-
 ### Bug Fixes
 
-* isInCurrentMonth ([0501ee4](https://github.com/aliakbarazizi/headless-datepicker/commit/0501ee442eeb49b8aba0c64275ab70f9e8bca08d))
+- isInCurrentMonth ([0501ee4](https://github.com/aliakbarazizi/headless-datepicker/commit/0501ee442eeb49b8aba0c64275ab70f9e8bca08d))
 
 ## [3.0.3](https://github.com/aliakbarazizi/headless-datepicker/compare/v3.0.2...v3.0.3) (2024-08-04)
 
-
 ### Bug Fixes
 
-* config object ([4ccf51a](https://github.com/aliakbarazizi/headless-datepicker/commit/4ccf51a7ea6c3d891d98d4d9be5aa37287ff7d11))
-* isInCurrentMonth wrong value ([9a06d58](https://github.com/aliakbarazizi/headless-datepicker/commit/9a06d58b94e5f2494a03e3e61bb5ce20e46a4f00))
+- config object ([4ccf51a](https://github.com/aliakbarazizi/headless-datepicker/commit/4ccf51a7ea6c3d891d98d4d9be5aa37287ff7d11))
+- isInCurrentMonth wrong value ([9a06d58](https://github.com/aliakbarazizi/headless-datepicker/commit/9a06d58b94e5f2494a03e3e61bb5ce20e46a4f00))
 
 ## [3.0.2](https://github.com/aliakbarazizi/headless-datepicker/compare/v3.0.1...v3.0.2) (2024-04-03)
 
-
 ### Bug Fixes
 
-* package json typescript ([ebe7599](https://github.com/aliakbarazizi/headless-datepicker/commit/ebe7599979d3417e45013c0ddaaf605690c29c1f))
+- package json typescript ([ebe7599](https://github.com/aliakbarazizi/headless-datepicker/commit/ebe7599979d3417e45013c0ddaaf605690c29c1f))
 
 ## [3.0.1](https://github.com/aliakbarazizi/headless-datepicker/compare/v3.0.0...v3.0.1) (2024-04-03)
 
-
 ### Bug Fixes
 
-* package json type ([44a2f2a](https://github.com/aliakbarazizi/headless-datepicker/commit/44a2f2a6b2975cc15208f2a29357271bc81fd706))
+- package json type ([44a2f2a](https://github.com/aliakbarazizi/headless-datepicker/commit/44a2f2a6b2975cc15208f2a29357271bc81fd706))
 
 ## [3.0.0](https://github.com/aliakbarazizi/headless-datepicker/compare/v2.0.2...v3.0.0) (2024-03-13)
 
-
 ### ⚠ BREAKING CHANGES
 
-* npm package change to headless-datetimepicker
+- npm package change to headless-datetimepicker
 
 ### Features
 
-* add new isDisabled and isInCurrentMonth for items and deprecated disabled ([4d75e17](https://github.com/aliakbarazizi/headless-datepicker/commit/4d75e172a6bceafaf56838f4ca89273871860478))
-* change package name ([ac9570c](https://github.com/aliakbarazizi/headless-datepicker/commit/ac9570c9d268fe167548e7e9c9d305a2e58bad8d))
-
+- add new isDisabled and isInCurrentMonth for items and deprecated disabled ([4d75e17](https://github.com/aliakbarazizi/headless-datepicker/commit/4d75e172a6bceafaf56838f4ca89273871860478))
+- change package name ([ac9570c](https://github.com/aliakbarazizi/headless-datepicker/commit/ac9570c9d268fe167548e7e9c9d305a2e58bad8d))
 
 ### Bug Fixes
 
-* export config from package ([cf85959](https://github.com/aliakbarazizi/headless-datepicker/commit/cf859597aa12252c67b81edf1cb5b8da385007ad))
+- export config from package ([cf85959](https://github.com/aliakbarazizi/headless-datepicker/commit/cf859597aa12252c67b81edf1cb5b8da385007ad))
 
 ## [2.0.2](https://github.com/aliakbarazizi/headless-datepicker/compare/v2.0.1...v2.0.2) (2023-10-29)
 
-
 ### Bug Fixes
 
-* maintain internal state in alwaysOpen ([2e690ef](https://github.com/aliakbarazizi/headless-datepicker/commit/2e690ef71e858ed3e3ee369cf958028db75fcc72))
+- maintain internal state in alwaysOpen ([2e690ef](https://github.com/aliakbarazizi/headless-datepicker/commit/2e690ef71e858ed3e3ee369cf958028db75fcc72))
 
 ## [2.0.1](https://github.com/aliakbarazizi/headless-datepicker/compare/v2.0.0...v2.0.1) (2023-10-13)
 
-
 ### Bug Fixes
 
-* close action ([12c54fc](https://github.com/aliakbarazizi/headless-datepicker/commit/12c54fcdbb479aa62643f7698fa0a6f606f3016d))
-* today action ([deea015](https://github.com/aliakbarazizi/headless-datepicker/commit/deea01528ef364d686887c5a1a33863e3ca9542e))
+- close action ([12c54fc](https://github.com/aliakbarazizi/headless-datepicker/commit/12c54fcdbb479aa62643f7698fa0a6f606f3016d))
+- today action ([deea015](https://github.com/aliakbarazizi/headless-datepicker/commit/deea01528ef364d686887c5a1a33863e3ca9542e))
 
 ## [2.0.0](https://github.com/aliakbarazizi/headless-datepicker/compare/v1.1.5...v2.0.0) (2023-10-13)
 
-
 ### ⚠ BREAKING CHANGES
 
-* action will run on parent picker by default
-* picker will no longer set back to default mode
-* Picker will no longer close by default after you select a day item, you need to set `action="close"` in Item component
+- action will run on parent picker by default
+- picker will no longer set back to default mode
+- Picker will no longer close by default after you select a day item, you need to set `action="close"` in Item component
 
 ### Features
 
-* action prop in Item component ([a1784d9](https://github.com/aliakbarazizi/headless-datepicker/commit/a1784d921504fcf24c2ed62860e65c07bb1f8775))
-* action will run on parent picker by default ([7ae162f](https://github.com/aliakbarazizi/headless-datepicker/commit/7ae162fec1ca1558cafc40c1820525ee624ef3c6))
-* add new actions show and toggle for year, month, day (for example showDay) ([6b5123e](https://github.com/aliakbarazizi/headless-datepicker/commit/6b5123ea77f5124c06cdb4308b99ae3742210e51))
-* change action for more control over pickers ([bce06e8](https://github.com/aliakbarazizi/headless-datepicker/commit/bce06e81e8967eef8dd88dd27b4477a004983e17))
-* picker will no longer set back to default mode ([e6b707b](https://github.com/aliakbarazizi/headless-datepicker/commit/e6b707b2bf32d3bfc7629ab00c1158ca4c1abf8a))
-
+- action prop in Item component ([a1784d9](https://github.com/aliakbarazizi/headless-datepicker/commit/a1784d921504fcf24c2ed62860e65c07bb1f8775))
+- action will run on parent picker by default ([7ae162f](https://github.com/aliakbarazizi/headless-datepicker/commit/7ae162fec1ca1558cafc40c1820525ee624ef3c6))
+- add new actions show and toggle for year, month, day (for example showDay) ([6b5123e](https://github.com/aliakbarazizi/headless-datepicker/commit/6b5123ea77f5124c06cdb4308b99ae3742210e51))
+- change action for more control over pickers ([bce06e8](https://github.com/aliakbarazizi/headless-datepicker/commit/bce06e81e8967eef8dd88dd27b4477a004983e17))
+- picker will no longer set back to default mode ([e6b707b](https://github.com/aliakbarazizi/headless-datepicker/commit/e6b707b2bf32d3bfc7629ab00c1158ca4c1abf8a))
 
 ### Bug Fixes
 
-* set hour to 0 when its not exists ([f7d6ea9](https://github.com/aliakbarazizi/headless-datepicker/commit/f7d6ea99a86b224a2ec5c68a359578e4cfba6fb9))
+- set hour to 0 when its not exists ([f7d6ea9](https://github.com/aliakbarazizi/headless-datepicker/commit/f7d6ea99a86b224a2ec5c68a359578e4cfba6fb9))
 
 ## [1.1.6](https://github.com/aliakbarazizi/headless-datepicker/compare/v1.1.5...v1.1.6) (2023-10-05)
 
